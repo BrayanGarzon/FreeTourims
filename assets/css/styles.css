@@ -447,6 +447,11 @@ input {
   transform: var(--img-scale);
 }
 
+/*----JUSTIFY CONTENTEN OF THE P----*/
+.about__data p{
+  text-align: justify;
+}
+
 /*=============== DISCOVER ===============*/
 .discover__card {
   position: relative;
