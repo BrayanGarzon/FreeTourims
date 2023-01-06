@@ -792,6 +792,64 @@ input {
   background-color: var(--text-color-light);
 }
 
+
+
+
+
+/*-----estyles page developers------*/
+
+
+/*-----container-father------*/
+.container-father{
+  width: 70%;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6% auto;
+
+  box-shadow: 11px 12px 25px 1px rgba(0,0,0,0.43);
+  -webkit-box-shadow: 11px 12px 25px 1px rgba(0,0,0,0.43);
+  -moz-box-shadow: 11px 12px 25px 1px rgba(0,0,0,0.43);
+}
+
+/*-----container-son------*/
+.container-father .container-son{
+  width: 96%;
+  height: 95%;
+  background-color: aquamarine;
+  border-radius: 20px;
+  
+}
+
+
+/*-----container-cajas------*/
+.container-father .container-son .cajas{
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
