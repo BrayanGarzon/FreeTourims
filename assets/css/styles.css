@@ -827,7 +827,7 @@ input {
 
 /*-----container-cajas------*/
 .container-father .container-son .cajas{
-  width: 100%;
+  width: auto;
   height: 90%;
   border-radius: 20px;
   background-color: antiquewhite;
@@ -835,6 +835,82 @@ input {
   justify-content: center;
   align-items: center;
 }
+
+
+/*---editando las cajas hijos---*/
+.container-father .container-son .cajas .H-I{
+  width: 50%;
+  height: 90%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  padding: 0;
+}
+.container-father .container-son .cajas .H-D{
+  width: 50%;
+  height: 90%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  padding: 0;
+}
+
+
+/*------contenedor boton regresar -----*/
+.container-father .container-son .container-button {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*** ESTILOS BOTÓN SLIDE CLOSE ***/
+.ov-btn-slide-close {
+  background: transparent; /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #4741d7; /* tamaño y color de borde */
+  padding: 10px 10px;
+  border-radius: 15px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-close:before, .ov-btn-slide-close:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background-color: #4741d7; /* color de fondo hover */
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.ov-btn-slide-close:after {
+  left: 100%;
+}
+.ov-btn-slide-close:hover {
+  color: #fff; /* color de fuente hover */
+}
+.ov-btn-slide-close:hover:before {
+  left: 0;
+}
+.ov-btn-slide-close:hover:after {
+  left: 50%;
+}
+
+
+
 
 
 
