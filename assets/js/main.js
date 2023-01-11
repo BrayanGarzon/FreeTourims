@@ -181,5 +181,5 @@ themeButton.addEventListener('click', () => {
 //CONFIGURACIONES PARA RESET DEL FORM CONTACTOS 
 function limpiar(){
     document.getElementById('formulario').reset();
-
 }
+
