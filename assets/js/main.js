@@ -172,3 +172,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+
+
+
+//CONFIGURACIONES PARA RESET DEL FORM CONTACTOS 
+function limpiar(){
+    document.getElementById('formulario').reset();
+
+}
