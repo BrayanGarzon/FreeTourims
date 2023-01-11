@@ -879,24 +879,15 @@ input {
     grid-template-columns: max-content;
     justify-content: center;
   }
-  .experience__content {
-    padding: 0;
-  }
-  .experience__overlay:nth-child(1) {
-    width: 190px;
-  }
-  .experience__overlay:nth-child(2) {
-    width: 80px;
-  }
   .home__info {
     width: 190px;
     padding: 1rem;
   }
-  .experience__img,
   .video__container {
     padding: 0;
   }
 }
+
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
@@ -913,6 +904,7 @@ input {
     margin: 0 auto;
   }
 }
+
 
 @media screen and (min-width: 768px) {
   body {
@@ -1004,13 +996,7 @@ input {
   .place__container {
     padding-top: 2rem;
   }
-  .experience__overlay:nth-child(1) {
-    width: 363px;
-    margin-right: 4rem;
-  }
-  .experience__overlay:nth-child(2) {
-    width: 160px;
-  }
+
   .subscribe__bg {
     background: none;
     padding: 0;
@@ -1066,18 +1052,6 @@ input {
   }
   .discover__title {
     font-size: var(--h2-font-size);
-  }
-  .experience__content {
-    margin: var(--mb-1) 0;
-    column-gap: 3.5rem;
-  }
-  .experience__overlay:nth-child(1) {
-    width: 463px;
-    margin-right: 7rem;
-  }
-  .experience__overlay:nth-child(2) {
-    width: 220px;
-    top: 3rem;
   }
   .video__container {
     grid-template-columns: .7fr;
