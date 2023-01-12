@@ -377,17 +377,24 @@ input {
 }
 
 /*=============== BUTTONS ===============*/
-.button {
+.button, .button-clear-content {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: .3s;
-  border-radius: 10px
+  border-radius: 10px;
+  margin: 5px;
 }
 
+/*hover button enviar*/
 .button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/*hover button clear*/
+.button-clear-content:hover {
   background-color: var(--first-color-alt);
 }
 
@@ -657,8 +664,13 @@ input {
   font-family: var(--body-font);
   border: none;
 }
-
-
+textarea{
+  outline: none;
+}
+textarea::placeholder{
+  font-family: sans-serif;
+  color: var(--first-color-second);
+}
 
 
 /*=============== FOOTER ===============*/

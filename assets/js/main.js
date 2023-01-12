@@ -183,3 +183,6 @@ function limpiar(){
     document.getElementById('formulario').reset();
 }
 
+document.getElementById('nombre-completo').reset();
+document.getElementById('nombre-completo').reset();
+
