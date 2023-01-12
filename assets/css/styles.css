@@ -22,6 +22,7 @@
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
+  --color-home-isla: rgb(20, 80, 92, 0.5);
 
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
@@ -341,7 +342,7 @@ input {
 }
 
 .home__info {
-  background-color: var(--first-color);
+  background-color: var(--color-home-isla);
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
@@ -350,6 +351,7 @@ input {
   right: 0;
   bottom: 1rem;
   width: 228px;
+  border-radius: 10px;
 }
 
 .home__info-title {
@@ -666,10 +668,15 @@ input {
 }
 textarea{
   outline: none;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  padding: 0 0.5em;
 }
 textarea::placeholder{
-  font-family: sans-serif;
-  color: var(--first-color-second);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  margin-top: 8px;
 }
 
 
