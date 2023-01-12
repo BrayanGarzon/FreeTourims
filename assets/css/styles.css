@@ -747,6 +747,13 @@ textarea::placeholder{
   color: var(--text-color);
 }
 
+
+span:hover{
+  cursor: pointer;
+  color: deeppink;
+  font-size: 15px;
+}
+
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
