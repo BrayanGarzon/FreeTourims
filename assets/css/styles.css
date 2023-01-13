@@ -22,8 +22,11 @@
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
-  --color-home-isla: rgb(20, 80, 92, 0.5);
 
+
+  --color-home-isla: rgb(20, 80, 92, 0.5);
+  --colo-span-solcial-footer: rgb(255, 20, 147);
+  
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --title-font: 'Raleway', sans-serif;
@@ -696,7 +699,7 @@ textarea::placeholder{
 }
 
 .footer__title {
-  margin-bottom: var(--mb-0-5);
+  margin-bottom: var(--mb-1);
 }
 
 .footer__description {
@@ -747,11 +750,28 @@ textarea::placeholder{
   color: var(--text-color);
 }
 
-
-span:hover{
+.span:hover{
   cursor: pointer;
-  color: deeppink;
-  font-size: 15px;
+  color: var(--colo-span-solcial-footer);
+  font-size: 20px;
+  transition: 200ms;
+}
+
+.footer-social-developers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-developers i{
+  font-size: 25px;
+}
+
+.footer-social-developers i:hover{
+  color: var(--colo-span-solcial-footer);
+  cursor: pointer;
+  font-size: 35px;
+  transition: 200ms;
 }
 
 /*========== SCROLL UP ==========*/
@@ -795,8 +815,6 @@ span:hover{
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
-
-
 
 
 
