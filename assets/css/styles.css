@@ -685,7 +685,7 @@ textarea::placeholder{
 
 /*=============== FOOTER ===============*/
 .footer__container {
-  row-gap: 5rem;
+  row-gap: 4rem;
 }
 
 .footer__content {
