@@ -2,13 +2,13 @@
     require 'database.php';
     $message = ''; /*variable de mensaje*/ 
 
-    if (!empty($_POST['email']) && !empty($_POST['password'])){
+    if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
         $stmt = $conn->prepare($sql);
 
-        $stmt->bindParam(':email',$_POST['email']);
+        $stmt->bindParam(':email', $_POST['email']);
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT); /*cifrar contraseñas*/ 
-        $stmt->bindParam(':password',$password);
+        $stmt->bindParam(':password', $password);
 
 
         if ($stmt->execute()){
@@ -40,36 +40,26 @@
 
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesphp.css">
 
-
-    <link rel="stylesheet" href="assets/css/stylesphp.css">
+<link rel="stylesheet" href="">
 
 </head>
 <body>
     
-    <?php if(!empty($message)):?>
-        <p><?php $message ?></p>
+    <?php if(!empty($message)): ?>
+        <p><?= $message ?></p>
     <?php endif; ?>
-    <div class="card">
-        <div class="card2">
-            
+
+    <?php require 'partials/header.php' ?>
 
 
-            <form action="index.php" method="post">
-                <h1>Sing-Up</h1>
-                <input class="input" type="text" name="email" placeholder="Enter your Email" required autocomplete="none">
-                <br>
-
-                <input class="input" type="password" placeholder="Enter your password" name="password" required>
-                
-                <br>
-                <div class="button">
-                    <input class="input_button" type="submit" value="Enviar">
-                </div>
-                
-            </form>
-        </div>
-    </div>
+        <form action="signup.php" method="POST">
+            <input name="email" type="text" placeholder="Enter your email">
+            <input name="password" type="password" placeholder="Enter your Password">
+            <input name="confirm_password" type="password" placeholder="Confirm Password">
+            <input type="submit" value="Submit">
+        </form>
 
     
 </body>

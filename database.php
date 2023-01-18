@@ -1,13 +1,13 @@
 <?php 
-    $server = 'localhost';
+    $server = 'localhost:3306';
     $username = 'root';
     $password = '';
-    $database = 'login-freetourims';
+    $database = 'php_login_database';
 
     try{
-        $conn = new PDO("mysql:host=$server; dbname=$database;",$username, $password);
-    } catch(PDOException $e){
-        die('Connected Failed: '.$e->getMessage());
+        $conn = new PDO("mysql:host=$server; dbname=$database;", $username, $password);
+    } catch (PDOException $e) {
+        die('Connected Failed: ' . $e->getMessage());
     }
 
 ?>
