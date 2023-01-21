@@ -41,7 +41,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="./stylesphp.css">
+    <link rel="stylesheet" href="stylesphp.css">
 
 </head>
 <body>
@@ -55,12 +55,13 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
 
         <form action="login.php" method="POST">
-            <input name="email" type="text" placeholder="Enter your email">
-            <input name="password" type="password" placeholder="Enter your Password">
+            <input name="email" type="text" placeholder="Enter your email" required>
+            <input name="password" type="password" placeholder="Enter your Password" required>
             <input type="submit" value="Submit">
         </form>
 
 
-    
+
+        
 </body>
 </html>
